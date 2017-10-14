@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.ah_abdelhak.fitnessapp.MainActivity">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/btnTraining"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnExercises"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:text="Exercises"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/colorPrimary"
+                app:cornerRadius="0dp"
+                app:shadowEnabled="true"
+                app:shadowHeight="2dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:text="Settings"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/colorPrimary"
+                app:cornerRadius="0dp"
+                app:shadowEnabled="true"
+                app:shadowHeight="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:text="Calendar"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/colorPrimary"
+                app:cornerRadius="0dp"
+                app:shadowEnabled="true"
+                app:shadowHeight="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

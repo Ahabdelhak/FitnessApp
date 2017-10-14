@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.ah_abdelhak.fitnessapp.view_Exercise">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Name of Exercise"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:src="@drawable/boat_pose"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:contentDescription="" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="START"
+        android:textColor="@android:color/white"
+        app:buttonColor="@color/colorPrimary"
+        app:cornerRadius="0dp"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:text="20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
